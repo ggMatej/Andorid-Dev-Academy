@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BMI calculator</string>
+    <string name="enterYourHeightText">Enter your height in meters:</string>
+    <string name="enterYourWeightText">Enter your weight in kilograms:</string>
+    <string name="weightTextHint">kilograms</string>
+    <string name="heightTextHint">meters</string>
+    <string name="calculateButtonText">Calculate</string>
+    <string name="resultText">Your result:</string>
+
+    <string-array name="weightCategories">
+        <item>UNDERWEIGHT</item>
+        <item>HEALTHY</item>
+        <item>OVERWEIGHT</item>
+        <item>OBESE</item>
+    </string-array>
+
+    <string-array name="advice">
+        <item>Eat more!</item>
+        <item>Good for you, you are healthy!</item>
+        <item>Careful, you are overweight! Start exercising!</item>
+        <item>You are too fat!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rolldice.RollDiceActivity"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/firstDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toTopOf="@id/fourthDiceView"
+        app:layout_constraintEnd_toStartOf="@+id/secondDiceView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toTopOf="@+id/fifthDiceView"
+        app:layout_constraintEnd_toStartOf="@id/thirdDiceView"
+        app:layout_constraintStart_toEndOf="@+id/firstDiceView" />
+
+    <ImageView
+        android:id="@+id/thirdDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toTopOf="@+id/sixthDiceView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondDiceView" />
+
+    <ImageView
+        android:id="@+id/fourthDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="148dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fifthDiceView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/fifthDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="148dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sixthDiceView"
+        app:layout_constraintStart_toEndOf="@+id/fourthDiceView" />
+
+    <ImageView
+        android:id="@+id/sixthDiceView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="148dp"
+        android:src="@drawable/dice_unknown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fifthDiceView" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rollDiceButtonText"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fifthDiceView" />
+
+    <TextView
+        android:id="@+id/numberOfLeftRollsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textSize="50sp"
+        android:text="@string/numberOfRollsLeftText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/secondDiceView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rollsLeftView"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/numberOfLeftRollsView"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

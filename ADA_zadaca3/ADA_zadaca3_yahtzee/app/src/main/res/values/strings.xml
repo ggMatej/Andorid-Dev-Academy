@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yahtzee Dice</string>
+    <string name="rollDiceButtonText">ROLL</string>
+    <string name="rollsLeftView">Rolls left:</string>
+    <string name="noMoreRollsLeftText">Finished!</string>
+    <string name="numberOfRollsLeftText">3</string>
+    <string name="noMoreRollsLeft">Finished!</string>
+</resources>
